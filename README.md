@@ -46,10 +46,10 @@
 
 
 ### 🔗 Quick Links
-- **Hoy**: Navigate back to the main portal (https://apex.hoy.today).
-- **Emojis**: Navigate to Mil Emojis (https://apex.milemojis.com).
-- **Scripting**: Switch to the Scripting app (https://apex-private.onrender.com).
-- **Antipala**: Take a break and play Antipala (https://apex.antipala.pro).
+- **Hoy**: Navigate back to the main portal (https://today.gonzalogramagia.com).
+- **Emojis**: Navigate to Mil Emojis (https://emojis.gonzalogramagia.com).
+- **Scripting**: Switch to the Scripting app (https://scripting.gonzalogramagia.com).
+- **Antipala**: Take a break and play Antipala (https://play.gonzalogramagia.com).
 
 ---
 

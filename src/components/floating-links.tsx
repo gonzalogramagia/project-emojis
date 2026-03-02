@@ -1,14 +1,22 @@
-import { Smile, BookCheck, Shovel, ClipboardClock } from 'lucide-react'
+import { Smile, Music, Joystick, ClipboardClock } from 'lucide-react'
 import { useLanguage } from '../contexts/language-context'
 
 export function FloatingLinks() {
-    const { t } = useLanguage()
+    const { language, t } = useLanguage()
+    const isEnglish = language === 'en'
+
+    // Logic for URLs
+    const getUrl = (baseUrl: string) => isEnglish ? `${baseUrl}/en` : baseUrl
+
+    const homeUrl = getUrl("https://today.gonzalogramagia.com")
+    const musicUrl = getUrl("https://music.gonzalogramagia.com")
+    const playUrl = getUrl("https://play.gonzalogramagia.com")
 
     return (
         <div className="fixed bottom-8 left-8 flex gap-3 z-50">
             {/* 1 - Hoy Button */}
             <a
-                href="https://apex.hoy.today"
+                href={homeUrl}
                 className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
                 aria-label={t('ariaHome') || 'Hoy'}
                 title={t('ariaHome') || 'Hoy'}
@@ -26,25 +34,24 @@ export function FloatingLinks() {
                 <Smile className="w-6 h-6 text-zinc-900 dark:text-white transition-colors" />
             </button>
 
-            {/* 3 - Scripting Expansible Button */}
+            {/* 3 - Music Button */}
             <a
-                href="https://apex-private.onrender.com"
-                className="peer group flex items-center p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 cursor-pointer"
-                aria-label="Scripting"
+                href={musicUrl}
+                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
+                aria-label={t('ariaMusic')}
+                title={t('ariaMusic')}
             >
-                <BookCheck className="w-6 h-6 shrink-0 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
-                <span className="text-sm font-semibold max-w-0 opacity-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-[150px] group-hover:opacity-100 group-hover:ml-2 group-hover:text-yellow-500">
-                    Ir al Scripting
-                </span>
+                <Music className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
             </a>
 
-            {/* 4 - Shovel Contráctil Button */}
+            {/* 4 - Play Button */}
             <a
-                href="https://apex.antipala.pro"
-                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl overflow-hidden transition-all duration-300 peer-hover:w-0 peer-hover:p-0 peer-hover:border-0 peer-hover:opacity-0 peer-hover:ml-[-12px] group cursor-pointer flex items-center justify-center shrink-0"
-                aria-label="Antipala"
+                href={playUrl}
+                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
+                aria-label={t('ariaPlay')}
+                title={t('ariaPlay')}
             >
-                <Shovel className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
+                <Joystick className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
             </a>
         </div>
     )
