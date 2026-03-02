@@ -115,7 +115,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }, []); // Run only on mount to avoid conflicting with active navigation
 
     useEffect(() => {
-        localStorage.setItem("language", language);
         document.documentElement.lang = language;
     }, [language]);
 
