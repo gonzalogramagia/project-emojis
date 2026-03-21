@@ -365,7 +365,7 @@ export const symbols: SymbolItem[] = [
     { id: "342", symbol: "🔝", description: { es: { main: "Top", secondary: ["Arriba"] }, en: { main: "Top", secondary: ["Arriba"] } }, tags: { es: ["Random"], en: ["Random"] } },
     { id: "343", symbol: "🆕", description: { es: { main: "Nuevo", secondary: ["New"] }, en: { main: "New", secondary: ["New"] } }, tags: { es: ["Random"], en: ["Random"] } },
     { id: "344", symbol: "🔙", description: { es: { main: "Back", secondary: ["Volver"] }, en: { main: "Back", secondary: ["Back"] } }, tags: { es: ["Random"], en: ["Random"] } },
-    { id: "345", symbol: "🆚", description: { es: { main: "Versus", secondary: ["Contra", "VS"] }, en: { main: "Versus", secondary: ["VS", "Against"] } }, tags: { es: ["Random"], en: ["Random"] } },
+    { id: "345", symbol: "🆚", description: { es: { main: "Versus", secondary: ["Contra", "VS"] }, en: { main: "Versus", secondary: ["VS", "Against"] } }, tags: { es: ["Random", "Fiesta"], en: ["Random", "Party"] } },
     { id: "346", symbol: "🔜", description: { es: { main: "Soon" }, en: { main: "Soon" } }, tags: { es: ["Random"], en: ["Random"] } },
     { id: "347", symbol: "🐶", description: { es: { main: "Perro" }, en: { main: "Dog" } }, tags: { es: ["Animales"], en: ["Animals"] } },
     { id: "348", symbol: "😍", description: { es: { main: "Corazones" }, en: { main: "Hearts" } }, tags: { es: ["Amor", "Cara"], en: ["Love", "Face"] } },
@@ -1042,5 +1042,6 @@ export const symbols: SymbolItem[] = [
     { id: "1017", symbol: "🤐🫳🎤", description: { es: { main: "Drop Mic" }, en: { main: "Drop Mic" } }, tags: { es: ["Expresiones"], en: ["Expressions", "Party"] } },
     { id: "1018", symbol: "∈", description: { es: { main: "Pertenece" }, en: { main: "Element of" } }, tags: { es: ["Símbolos", "Conjuntos", "Matematica", "Signos"], en: ["Symbols", "Sets", "Math", "Signs"] } },
     { id: "1019", symbol: "∉", description: { es: { main: "No pertenece" }, en: { main: "Not an element of" } }, tags: { es: ["Símbolos", "Conjuntos", "Matematica", "Signos"], en: ["Symbols", "Sets", "Math", "Signs"] } },
+    { id: "1020", symbol: "😉", description: { es: { main: "Guiño", secondary: ["guino", "guiñar", "complice", ";)"] }, en: { main: "Wink", secondary: ["winking", "flirt", ";)"] } }, tags: { es: ["Cara", "Emociones", "Fiesta"], en: ["Face", "Emotions", "Party"] } },
 
 ];
