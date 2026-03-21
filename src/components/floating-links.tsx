@@ -8,9 +8,9 @@ export function FloatingLinks() {
     // Logic for URLs
     const getUrl = (baseUrl: string) => isEnglish ? `${baseUrl}/en` : baseUrl
 
-    const homeUrl = getUrl("https://today.gonzalogramagia.com")
-    const musicUrl = getUrl("https://music.gonzalogramagia.com")
-    const playUrl = getUrl("https://play.gonzalogramagia.com")
+    const homeUrl = getUrl("https://hoy.today")
+    const musicUrl = getUrl("https://bien.estate")
+    const playUrl = getUrl("https://antipala.pro")
 
     return (
         <div className="fixed bottom-8 left-8 flex gap-3 z-50">

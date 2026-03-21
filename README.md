@@ -46,10 +46,11 @@
 
 
 ### 🔗 Quick Links
-- **Hoy**: Navigate back to the main portal (https://today.gonzalogramagia.com).
+- **Hoy**: Navigate to the main portal (https://hoy.today).
 - **Emojis**: Navigate to Mil Emojis (https://emojis.gonzalogramagia.com).
-- **Scripting**: Switch to the Scripting app (https://scripting.gonzalogramagia.com).
-- **Antipala**: Take a break and play Antipala (https://play.gonzalogramagia.com).
+- **Music**: Your curated music collection ready at hand (https://bien.estate).
+- **Antipala**: Take a break and play Antipala (https://antipala.pro).
+- **Moovimiento**: Visit Moovimiento (https://moovimiento.com).
 
 ---
 
