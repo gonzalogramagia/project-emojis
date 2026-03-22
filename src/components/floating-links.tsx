@@ -1,58 +1,59 @@
-import { Smile, Music, Joystick, ClipboardClock } from 'lucide-react'
-import { useLanguage } from '../contexts/language-context'
+import { Smile, Joystick, ClipboardClock } from "lucide-react";
+import { Disc3 } from "lucide-react";
+import { useLanguage } from "../contexts/language-context";
 
 export function FloatingLinks() {
-    const { language, t } = useLanguage()
-    const isEnglish = language === 'en'
+  const { language, t } = useLanguage();
+  const isEnglish = language === "en";
 
-    // Logic for URLs
-    const getUrl = (baseUrl: string) => isEnglish ? `${baseUrl}/en` : baseUrl
+  // Logic for URLs
+  const getUrl = (baseUrl: string) => (isEnglish ? `${baseUrl}/en` : baseUrl);
 
-    const homeUrl = getUrl("https://today.gonzalogramagia.com")
-    const musicUrl = getUrl("https://music.gonzalogramagia.com")
-    const playUrl = getUrl("https://play.gonzalogramagia.com")
+  const homeUrl = getUrl("https://hoy.today");
+  const musicUrl = getUrl("https://bien.estate");
+  const playUrl = getUrl("https://antipala.pro");
 
-    return (
-        <div className="fixed bottom-8 left-8 flex gap-3 z-50">
-            {/* 1 - Hoy Button */}
-            <a
-                href={homeUrl}
-                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
-                aria-label={t('ariaHome') || 'Hoy'}
-                title={t('ariaHome') || 'Hoy'}
-            >
-                <ClipboardClock className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
-            </a>
+  return (
+    <div className="fixed bottom-8 left-8 flex gap-3 z-50">
+      {/* 1 - Hoy Button */}
+      <a
+        href={homeUrl}
+        className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
+        aria-label={t("ariaHome") || "Hoy"}
+        title={t("ariaHome") || "Hoy"}
+      >
+        <ClipboardClock className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
+      </a>
 
-            {/* 2 - Emojis Button (Disabled) */}
-            <button
-                disabled
-                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg transition-all opacity-50 cursor-not-allowed group"
-                aria-label={t('ariaEmojis') || 'Emojis'}
-                title={t('ariaEmojis') || 'Emojis'}
-            >
-                <Smile className="w-6 h-6 text-zinc-900 dark:text-white transition-colors" />
-            </button>
+      {/* 2 - Emojis Button (Disabled) */}
+      <button
+        disabled
+        className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg transition-all opacity-50 cursor-not-allowed group"
+        aria-label={t("ariaEmojis") || "Emojis"}
+        title={t("ariaEmojis") || "Emojis"}
+      >
+        <Smile className="w-6 h-6 text-zinc-900 dark:text-white transition-colors" />
+      </button>
 
-            {/* 3 - Music Button */}
-            <a
-                href={musicUrl}
-                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
-                aria-label={t('ariaMusic')}
-                title={t('ariaMusic')}
-            >
-                <Music className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
-            </a>
+      {/* 3 - Music Button */}
+      <a
+        href={musicUrl}
+        className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
+        aria-label={t("ariaMusic") || "Ir a Music"}
+        title={t("ariaMusic") || "Ir a Music"}
+      >
+        <Disc3 className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
+      </a>
 
-            {/* 4 - Play Button */}
-            <a
-                href={playUrl}
-                className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
-                aria-label={t('ariaPlay')}
-                title={t('ariaPlay')}
-            >
-                <Joystick className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
-            </a>
-        </div>
-    )
+      {/* 4 - Play Button */}
+      <a
+        href={playUrl}
+        className="p-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group cursor-pointer"
+        aria-label={t("ariaPlay")}
+        title={t("ariaPlay")}
+      >
+        <Joystick className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
+      </a>
+    </div>
+  );
 }
