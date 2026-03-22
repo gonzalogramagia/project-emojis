@@ -42,7 +42,7 @@ export function FloatingLinks() {
         aria-label={t("ariaMusic") || "Ir a Music"}
         title={t("ariaMusic") || "Ir a Music"}
       >
-        <Disc3 className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors" />
+        <Disc3 className="w-6 h-6 text-zinc-900 dark:text-white group-hover:text-yellow-500 transition-colors animate-spin-slow" />
       </a>
 
       {/* 4 - Play Button */}
