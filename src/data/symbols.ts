@@ -8511,4 +8511,27 @@ export const symbols: SymbolItem[] = [
       en: ["Face", "Emotions", "Party"],
     },
   },
+  {
+    id: "1021",
+    symbol: "🪏",
+    description: {
+      es: {
+        main: "Pala",
+        secondary: [
+          "Palear",
+          "Trabajar",
+          "Cavar",
+          "Chamba",
+          "Chambear",
+          "Laburo",
+          "Laburar",
+        ],
+      },
+      en: { main: "Shovel", secondary: ["Digging", "Work", "Dig"] },
+    },
+    tags: {
+      es: ["Herramientas", "Trabajo", "Construcción", "Jardinería"],
+      en: ["Tools", "Work", "Construction", "Gardening"],
+    },
+  },
 ];
